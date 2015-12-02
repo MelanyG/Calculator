@@ -7,8 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <CoreGraphics/CoreGraphics.h>
 
 @interface Brains : NSObject
+
+@property(strong, nonatomic)NSMutableArray *storage;
+
+-(NSString*)addingElementsToStorage:(NSString*)valueString;
+-(NSString*)caseChangeSign:(NSInteger)countOfEqualsToBeEntered
+                          :(NSString*)valueString;
+
+-(void) clearTheStorage;
+-(NSString*)equalsPressed:(NSInteger)countOfEqualsToBeEntered
+                    :(NSString*)valueString
+                    :(NSString*)signOfOperation
+                    :(NSString*) dataEntered;
+
+
+
 
 @end

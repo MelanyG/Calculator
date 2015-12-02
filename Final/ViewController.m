@@ -12,12 +12,13 @@
 @interface ViewController ()
 
 @property NSString *valueString;
-//@property(nonatomic) BOOL userIsInProcessOfEnteringNumber;
 @property(nonatomic) BOOL tappedEquals;
 @property(nonatomic) BOOL tappeddecimal;
 @property(nonatomic) BOOL tappedOperation;
 @property(strong, nonatomic)NSMutableArray *storage;
 @property(nonatomic) NSInteger countOfEqualsToBeEntered;
+
+
 @end
 
 @implementation ViewController
@@ -25,15 +26,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    //self.userIsInProcessOfEnteringNumber=YES;
     self.valueString=@"";
-    self.storage=[[NSMutableArray alloc]init];
+    brain = [[Brains alloc]init];
     
 }
 
+
 -(IBAction)tappedClear:(id)sender
 {
-    [self.storage removeAllObjects];
+    [brain clearTheStorage];
     self.valueString=@"";
     self.label.text = @"0";
     self.labelForSign.text = @"";
@@ -44,24 +45,22 @@
     self.countOfEqualsToBeEntered=0;
     self.tappedEquals=NO;
     self.tappedOperation=NO;
-    //self.userIsInProcessOfEnteringNumber=YES;
+    
     NSString *number=[NSString stringWithFormat:@"%li",(long)sender.tag];
     self.valueString = [self.valueString stringByAppendingString:number];
-    //if (self.userIsInProcessOfEnteringNumber)
-    //{
+    
         if([self.label.text isEqualToString: @"0"])
            self.label.text = [NSString stringWithFormat:@"%li",(long)sender.tag];
         else
            self.label.text=self.valueString ;
-    //}
+
 }
 
 - (IBAction)decimalPressed:(UIButton *)sender
 {
-    NSString *decimal=@".";
     if(!self.tappeddecimal)
     {
-        self.valueString = [self.valueString stringByAppendingString:decimal];
+        self.valueString = [self.valueString stringByAppendingString:@"."];
         self.label.text = self.valueString;
      
     }
@@ -76,13 +75,13 @@
 
     self.tappeddecimal=NO;
         if(self.tappedEquals==NO)
-            [self.storage addObject:self.valueString];
+        {
+            self.valueString=[brain addingElementsToStorage: self.valueString];
+            self.label.text=self.valueString;
+        }
+      
     self.valueString=@"";
-    if (self.storage.count==3)
-            {
-                [self caseStorageIsFull:self.storage];
-                
-            }
+        
      self.tappedOperation=YES;
           switch(sender.tag)
                 {
@@ -107,8 +106,10 @@
                         
             }
         if(self.tappedOperation)
-            [self.storage addObject:self.valueString];
-        
+        {
+            [brain addingElementsToStorage: self.valueString];
+        }
+ 
             self.valueString=@"";
     }
       
@@ -118,48 +119,16 @@
 
 - (IBAction)changeSignPressed:(UIButton *)sender
 {
-    CGFloat numberOne;
-    if(self.countOfEqualsToBeEntered>0)
-        numberOne=[self.storage[0] floatValue];
-    else
-        numberOne=[self.valueString floatValue];
-    numberOne*=-1;
-    self.valueString=[NSString stringWithFormat:@"%g", numberOne];
+    self.valueString=[brain caseChangeSign: self.countOfEqualsToBeEntered : self.valueString];
     self.label.text=self.valueString;
-    if(self.storage.count==1)
-        self.storage[0]=self.valueString;
-    if(self.storage.count==3)
-        self.storage[0]=self.valueString;
-    
-}
+   }
 
 - (IBAction)equalPressed:(UIButton *)sender
 {
     self.tappedEquals=YES;
-    
-    if(self.storage.count==0)
-        [self.storage addObject:self.valueString];
-    if(self.storage.count==1&&self.countOfEqualsToBeEntered>0)
-    {
-        self.storage[1]=self.labelForSign.text;
-        self.storage[2]=self.valueString;
-        [self caseStorageIsFull:self.storage];
-    }
-    if(self.storage.count==2)
-        {
-            if([self.valueString isEqual:@""])
-                {
-                    self.storage[2]=self.storage[0];
-                    self.valueString=self.label.text;
-                }
-            else
-                {
-                    self.labelForSign.text=@"";
-                    [self.storage addObject:self.valueString];
-                }
-            [self caseStorageIsFull:self.storage];
-            //self.valueString=self.storage[0];
-        }
+    NSString* result=[brain equalsPressed:self.countOfEqualsToBeEntered :self.valueString:self.labelForSign.text :self.label.text];
+        self.label.text=result;
+    self.labelForSign.text=@"";
     self.countOfEqualsToBeEntered++;
 }
 
@@ -169,35 +138,5 @@
     // Dispose of any resources that can be recreated.
 }
 
--(CGFloat) calculationsDone:(NSMutableArray*) storage
-{
-    CGFloat numberOne=[storage[0] floatValue];
-    CGFloat numberTwo=[storage[2] floatValue];
-
-    CGFloat result;
-    if([storage[1] isEqual:@"+"])
-        result=numberOne+numberTwo;
-    else if([storage[1] isEqual:@"-"])
-        result=numberOne-numberTwo;
-    else if([storage[1] isEqual:@"*"])
-        result=numberOne*numberTwo;
-    else if([storage[1] isEqual:@"/"])
-        result=numberOne/numberTwo;
-    return result;
-}
-
--(void)caseStorageIsFull: (NSMutableArray*) storage
-{
-    CGFloat result;
-    result = [self calculationsDone: self.storage];
-    
-    NSString * finalResult=@"";
-    
-    [self.storage removeAllObjects];
-    finalResult=[NSString stringWithFormat:@"%g", result];
-    self.label.text=finalResult;
-    //self.userIsInProcessOfEnteringNumber=YES;
-    [self.storage addObject:finalResult];
-}
 
 @end

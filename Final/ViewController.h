@@ -16,10 +16,12 @@ typedef enum : NSInteger {
                             minus,
                             multyplication,
                             division,
-                            equal,
-                            } operations;
+                        } operations;
 
 @interface ViewController : UIViewController
+{
+    Brains *brain;
+}
 
 @property (nonatomic, strong) IBOutlet UILabel *label;
 @property (strong, nonatomic) IBOutlet UILabel *labelForSign;
