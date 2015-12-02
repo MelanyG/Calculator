@@ -30,7 +30,7 @@
      }
     return valueString;
 }
-////
+
 
 -(void) clearTheStorage
 {
