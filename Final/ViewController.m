@@ -42,7 +42,7 @@
 
 - (IBAction)numberPressed:(UIButton *)sender
 {
-    self.countOfEqualsToBeEntered=0;
+    self.countOfEqualsToBeEntered=NO;
     self.tappedEquals=NO;
     self.tappedOperation=NO;
     
@@ -98,8 +98,16 @@
                         self.valueString=@"*";
                         break;
                     case division:
-                        self.labelForSign.text =@"/";
-                        self.valueString=@"/";
+                        self.labelForSign.text =@"÷";
+                        self.valueString=@"÷";
+                        break;
+                    case squaredX2:
+                        self.labelForSign.text =@"x^2";
+                        self.valueString=@"x^2";
+                        break;
+                    case sqrt1:
+                        self.labelForSign.text =@"√";
+                        self.valueString=@"√";
                         break;
                      default:
                         break;
@@ -119,14 +127,18 @@
 
 - (IBAction)changeSignPressed:(UIButton *)sender
 {
-    self.valueString=[brain caseChangeSign: self.countOfEqualsToBeEntered : self.valueString];
+    self.valueString=[brain caseChangeSign: self.countOfEqualsToBeEntered
+                                          : self.valueString];
     self.label.text=self.valueString;
    }
 
 - (IBAction)equalPressed:(UIButton *)sender
 {
     self.tappedEquals=YES;
-    NSString* result=[brain equalsPressed:self.countOfEqualsToBeEntered :self.valueString:self.labelForSign.text :self.label.text];
+    NSString* result=[brain equalsPressed:self.countOfEqualsToBeEntered
+                                         :self.valueString
+                                         :self.labelForSign.text
+                                         :self.label.text];
         self.label.text=result;
     self.labelForSign.text=@"";
     self.countOfEqualsToBeEntered++;

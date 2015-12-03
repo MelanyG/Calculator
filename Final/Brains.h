@@ -19,9 +19,9 @@
 
 -(void) clearTheStorage;
 -(NSString*)equalsPressed:(NSInteger)countOfEqualsToBeEntered
-                    :(NSString*)valueString
-                    :(NSString*)signOfOperation
-                    :(NSString*) dataEntered;
+                         :(NSString*)valueString
+                         :(NSString*)signOfOperation
+                         :(NSString*) dataEntered;
 
 
 

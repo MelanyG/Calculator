@@ -16,6 +16,8 @@ typedef enum : NSInteger {
                             minus,
                             multyplication,
                             division,
+                            sqrt1,
+                            squaredX2,
                         } operations;
 
 @interface ViewController : UIViewController

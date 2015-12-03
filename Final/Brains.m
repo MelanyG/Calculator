@@ -38,7 +38,10 @@
 }
 
 
--(NSString*)equalsPressed:(NSInteger)countOfEqualsToBeEntered :(NSString*)valueString  :(NSString*)signOfOperation  :(NSString*) dataEntered
+-(NSString*)equalsPressed:(NSInteger)countOfEqualsToBeEntered
+                         :(NSString*)valueString
+                         :(NSString*)signOfOperation
+                         :(NSString*) dataEntered
 {
     NSString* finalResult;
   
@@ -64,27 +67,36 @@
         }
         finalResult=[self caseStorageIsFull:self.storage];
     }
+    if(self.storage.count==3)
+    {
+        finalResult=[self caseStorageIsFull:self.storage];
+    }
     return finalResult;
 
 }
 
 
--(NSString*)caseChangeSign:(NSInteger)countOfEqualsToBeEntered :(NSString*)valueString
+-(NSString*)caseChangeSign:(NSInteger)countOfEqualsToBeEntered
+                          :(NSString*)valueString
 {
     CGFloat numberOne;
     if([self stringIsNumeric: valueString]&&self.storage.count==2)
-         [self.storage addObject:valueString];
-    if(self.storage.count<3)
+    {
+        [self.storage addObject:valueString];
+        numberOne=[valueString floatValue];
+    }
+    else if(self.storage.count==1)
         numberOne=[self.storage[0] floatValue];
     else
         numberOne=[valueString floatValue];
+   
     numberOne*=-1;
     valueString=[NSString stringWithFormat:@"%g", numberOne];
 
     if(self.storage.count<3)
         self.storage[0]=valueString;
     if(self.storage.count==3)
-        self.storage[3]=valueString;
+        self.storage[2]=valueString;
     return valueString;
 }
 
@@ -100,8 +112,12 @@
         self.result=numberOne-numberTwo;
     else if([storage[1] isEqual:@"*"])
         self.result=numberOne*numberTwo;
-    else if([storage[1] isEqual:@"/"])
+    else if([storage[1] isEqual:@"÷"])
         self.result=numberOne/numberTwo;
+    else if([storage[1] isEqual:@"x^2"])
+        self.result=pow(numberOne,2);
+    else if([storage[1] isEqual:@"√"])
+        self.result=sqrt(numberOne);
     return self.result;
 }
 
