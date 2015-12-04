@@ -23,9 +23,6 @@
                                 <state key="normal" title="." backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="301" y="362" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="300" y="549" width="299" height="118"/>
                                 </variation>
@@ -46,9 +43,6 @@
                                 <state key="normal" title="=" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="480" y="364" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="-224" y="549" width="299" height="118"/>
                                 </variation>
@@ -68,9 +62,6 @@
                                 <state key="normal" title="2" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="394" y="320" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="300" y="430" width="299" height="118"/>
                                 </variation>
@@ -90,9 +81,6 @@
                                 <state key="normal" title="1" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="301" y="320" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="0.0" y="430" width="299" height="118"/>
                                 </variation>
@@ -112,9 +100,6 @@
                                 <state key="normal" title="5" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="394" y="272" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="300" y="310" width="299" height="119"/>
                                 </variation>
@@ -134,9 +119,6 @@
                                 <state key="normal" title="3" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="480" y="320" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="600" y="430" width="299" height="118"/>
                                 </variation>
@@ -156,9 +138,6 @@
                                 <state key="normal" title="6" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="480" y="272" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="600" y="310" width="299" height="119"/>
                                 </variation>
@@ -178,9 +157,6 @@
                                 <state key="normal" title="7" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="301" y="221" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="0.0" y="191" width="299" height="118"/>
                                 </variation>
@@ -200,9 +176,6 @@
                                 <state key="normal" title="8" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="394" y="221" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="300" y="191" width="299" height="118"/>
                                 </variation>
@@ -222,9 +195,6 @@
                                 <state key="normal" title="9" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="480" y="221" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="600" y="191" width="299" height="118"/>
                                 </variation>
@@ -245,9 +215,6 @@
                                 <state key="normal" title="√" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="394" y="179" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="300" y="72" width="299" height="118"/>
                                 </variation>
@@ -267,9 +234,6 @@
                                 <state key="normal" title="C" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="301" y="179" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="0.0" y="72" width="299" height="118"/>
                                 </variation>
@@ -290,9 +254,6 @@
                                 <state key="normal" title="x2" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="480" y="179" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="600" y="72" width="299" height="118"/>
                                 </variation>
@@ -312,9 +273,6 @@
                                 <state key="normal" title="4" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="301" y="272" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="0.0" y="310" width="299" height="119"/>
                                 </variation>
@@ -334,9 +292,6 @@
                                 <state key="normal" title="0" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="394" y="362" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="0.0" y="549" width="299" height="118"/>
                                 </variation>
@@ -357,9 +312,6 @@
                                 <state key="normal" title="*" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="559" y="272" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="900" y="310" width="299" height="119"/>
                                 </variation>
@@ -380,9 +332,6 @@
                                 <state key="normal" title="÷" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="559" y="221" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="900" y="191" width="299" height="118"/>
                                 </variation>
@@ -403,9 +352,6 @@
                                 <state key="normal" title="+/-" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="559" y="179" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="900" y="72" width="299" height="118"/>
                                 </variation>
@@ -426,9 +372,6 @@
                                 <state key="normal" title="+" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="559" y="364" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="76" y="549" width="299" height="118"/>
                                 </variation>
@@ -449,9 +392,6 @@
                                 <state key="normal" title="-" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="559" y="316" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="900" y="430" width="299" height="118"/>
                                 </variation>
@@ -480,8 +420,7 @@
                                         <exclude reference="iRa-G9-7Wp"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="605" height="100"/>
+                                <variation key="heightClass=compact">
                                     <mask key="constraints">
                                         <exclude reference="e0K-j0-cYq"/>
                                         <include reference="iRa-G9-7Wp"/>
@@ -506,9 +445,6 @@
                                 <state key="normal" title="A">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="5" y="179" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="0.0" y="60" width="99" height="67"/>
                                 </variation>
@@ -522,9 +458,6 @@
                                 <state key="normal" title="B">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="75" y="179" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="100" y="60" width="99" height="67"/>
                                 </variation>
@@ -538,9 +471,6 @@
                                 <state key="normal" title="V">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="80" y="221" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="200" y="60" width="99" height="67"/>
                                 </variation>
@@ -554,9 +484,6 @@
                                 <state key="normal" title="L">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="80" y="272" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="300" y="60" width="100" height="67"/>
                                 </variation>
@@ -570,9 +497,6 @@
                                 <state key="normal" title="D">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="80" y="316" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="0.0" y="128" width="99" height="67"/>
                                 </variation>
@@ -586,9 +510,6 @@
                                 <state key="normal" title="E">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="5" y="221" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="100" y="128" width="99" height="67"/>
                                 </variation>
@@ -602,9 +523,6 @@
                                 <state key="normal" title="I">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="5" y="272" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="200" y="128" width="99" height="67"/>
                                 </variation>
@@ -618,9 +536,6 @@
                                 <state key="normal" title="G">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="5" y="316" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="300" y="128" width="100" height="67"/>
                                 </variation>
@@ -634,9 +549,6 @@
                                 <state key="normal" title="Z">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="5" y="362" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="0.0" y="196" width="99" height="68"/>
                                 </variation>
@@ -650,9 +562,6 @@
                                 <state key="normal" title="X">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="80" y="362" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="100" y="196" width="99" height="68"/>
                                 </variation>
@@ -666,9 +575,6 @@
                                 <state key="normal" title="J">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="155" y="362" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="200" y="196" width="99" height="68"/>
                                 </variation>
@@ -682,9 +588,6 @@
                                 <state key="normal" title="K">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="154" y="320" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="300" y="196" width="100" height="68"/>
                                 </variation>
@@ -698,9 +601,6 @@
                                 <state key="normal" title="N">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="154" y="221" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="0.0" y="265" width="99" height="67"/>
                                 </variation>
@@ -714,9 +614,6 @@
                                 <state key="normal" title="Y">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="155" y="179" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="100" y="265" width="99" height="67"/>
                                 </variation>
@@ -730,9 +627,6 @@
                                 <state key="normal" title="P">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="230" y="179" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="200" y="265" width="99" height="67"/>
                                 </variation>
@@ -746,9 +640,6 @@
                                 <state key="normal" title="L">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="230" y="221" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="300" y="265" width="100" height="67"/>
                                 </variation>
@@ -762,9 +653,6 @@
                                 <state key="normal" title="F">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="230" y="320" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="100" y="333" width="99" height="67"/>
                                 </variation>
@@ -778,9 +666,6 @@
                                 <state key="normal" title="T">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="154" y="272" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="200" y="333" width="99" height="67"/>
                                 </variation>
@@ -794,9 +679,6 @@
                                 <state key="normal" title="M">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="230" y="272" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="300" y="333" width="100" height="67"/>
                                 </variation>
@@ -810,9 +692,6 @@
                                 <state key="normal" title="W">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="230" y="362" width="30" height="30"/>
-                                </variation>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="0.0" y="333" width="99" height="67"/>
                                 </variation>
@@ -836,8 +715,7 @@
                                         <exclude reference="cDF-F2-XyA"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="101" width="600" height="50"/>
+                                <variation key="heightClass=compact">
                                     <mask key="constraints">
                                         <exclude reference="c6V-YO-ap8"/>
                                         <include reference="cDF-F2-XyA"/>

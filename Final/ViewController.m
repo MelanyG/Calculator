@@ -22,12 +22,16 @@
 @end
 
 @implementation ViewController
+#pragma mark - singleton method
+
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.valueString=@"";
-    brain = [[Brains alloc]init];
+    brain = [Brains createSinglton];
     
 }
 
@@ -135,11 +139,13 @@
 - (IBAction)equalPressed:(UIButton *)sender
 {
     self.tappedEquals=YES;
+    
     NSString* result=[brain equalsPressed:self.countOfEqualsToBeEntered
                                          :self.valueString
                                          :self.labelForSign.text
                                          :self.label.text];
-        self.label.text=result;
+    //self.valueString=self.label.text; // added for 2+=;
+    self.label.text=result;
     self.labelForSign.text=@"";
     self.countOfEqualsToBeEntered++;
 }

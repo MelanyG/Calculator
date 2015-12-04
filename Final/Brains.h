@@ -24,6 +24,7 @@
                          :(NSString*) dataEntered;
 
 
++ (Brains*)createSinglton;
 
 
 @end

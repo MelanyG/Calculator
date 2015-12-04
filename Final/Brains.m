@@ -16,6 +16,17 @@
 
 @implementation Brains
 
++ (Brains*)createSinglton
+{
+    static dispatch_once_t predicate = 0;
+    __strong static id sharedObject = nil;
+    //static id sharedObject = nil;  //if you're not using ARC
+    dispatch_once(&predicate, ^{
+        sharedObject = [[self alloc] init];
+        //sharedObject = [[[self alloc] init] retain]; // if you're not using ARC
+    });
+    return sharedObject;
+}
 
 -(NSString*)addingElementsToStorage:(NSString*)valueString
 {
@@ -80,23 +91,49 @@
                           :(NSString*)valueString
 {
     CGFloat numberOne;
-    if([self stringIsNumeric: valueString]&&self.storage.count==2)
-    {
-        [self.storage addObject:valueString];
-        numberOne=[valueString floatValue];
-    }
-    else if(self.storage.count==1)
-        numberOne=[self.storage[0] floatValue];
-    else
-        numberOne=[valueString floatValue];
-   
-    numberOne*=-1;
-    valueString=[NSString stringWithFormat:@"%g", numberOne];
+    //if(!self.storage)
+       // self.storage=[[NSMutableArray alloc]init];
 
-    if(self.storage.count<3)
-        self.storage[0]=valueString;
-    if(self.storage.count==3)
-        self.storage[2]=valueString;
+    //if([self stringIsNumeric: valueString]&&self.storage.count==2)
+    //{
+    //    [self.storage addObject:valueString];
+    //    numberOne=[valueString floatValue];
+    //}
+    //else if(self.storage.count==1)
+    ///    numberOne=[self.storage[0] floatValue];
+    //else
+    //    numberOne=[valueString floatValue];
+   
+    //numberOne*=-1;
+    //valueString=[NSString stringWithFormat:@"%g", numberOne];
+//if(self.storage.count==0)
+    //    [self.storage addObject:valueString];
+    //if(self.storage.count>0 && self.storage.count<3)
+     //  self.storage[0]=valueString;
+    //if(self.storage.count==3)
+     //   self.storage[2]=valueString;
+    
+    
+    
+    
+   // if([self stringIsNumeric: valueString]&&self.storage.count==2)
+   //             [self.storage addObject:valueString];
+   //if(self.storage.count<3)
+   //{
+   //    [self.storage addObject:valueString];
+   //    numberOne=[self.storage[0] floatValue];
+   //}
+   //else
+       numberOne=[valueString floatValue];
+     numberOne*=-1;
+    valueString=[NSString stringWithFormat:@"%g", numberOne];
+   
+     //if(self.storage.count<3)
+    // //        self.storage[0]=valueString;
+    //if(self.storage.count==3)
+    //      self.storage[3]=valueString;
+    
+    
     return valueString;
 }
 
