@@ -16,9 +16,17 @@ typedef enum : NSInteger {
                             minus,
                             multyplication,
                             division,
-                            sqrt1,
-                            squaredX2,
-                        } operations;
+                         } operations;
+typedef enum : NSInteger {
+                            sqrt1=1005,
+                            squaredX2=1006,
+                            squaredX3=1007,
+                            sinus=1008,
+                            cosinus=1009,
+                            tangens=1010,
+                            divonX=1011,
+                            } binaryOperations;
+
 
 @interface ViewController : UIViewController
 {
@@ -34,6 +42,7 @@ typedef enum : NSInteger {
 - (IBAction)decimalPressed:(UIButton *)sender;
 - (IBAction)operationPressed:(UIButton *)sender;
 - (IBAction)changeSignPressed:(UIButton *)sender;
+- (IBAction)tappedDellLastNumber:(UIButton *)sender;
 
 
 

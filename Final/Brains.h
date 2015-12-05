@@ -13,7 +13,8 @@
 
 @property(strong, nonatomic)NSMutableArray *storage;
 
--(NSString*)addingElementsToStorage:(NSString*)valueString;
+-(NSString*)addingElementsToStorage:(NSString*)valueString
+                                   : (BOOL) tappedOperation;;
 -(NSString*)caseChangeSign:(NSInteger)countOfEqualsToBeEntered
                           :(NSString*)valueString;
 
@@ -23,6 +24,10 @@
                          :(NSString*)signOfOperation
                          :(NSString*) dataEntered;
 
+-(NSString*)caseDellPressed:(NSString*)valueString
+                           : (BOOL) tappedOperation;
+
+-(NSString*)caseUnaryOperationIsPressed: (NSString*)valueString;
 
 + (Brains*)createSinglton;
 

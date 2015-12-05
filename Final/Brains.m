@@ -11,6 +11,8 @@
 @interface Brains()
 
 @property (nonatomic, assign) CGFloat result;
+@property (nonatomic, strong) NSString* buferForData;
+@property (nonatomic, strong) NSString* buferForSign;
 
 @end
 
@@ -29,11 +31,17 @@
 }
 
 -(NSString*)addingElementsToStorage:(NSString*)valueString
+                                   : (BOOL) tappedOperation;
 {
     NSString* finalResult;
     if(!self.storage)
     self.storage=[[NSMutableArray alloc]init];
-    [self.storage addObject: valueString];
+    
+    if(tappedOperation)
+        self.storage[1]=valueString;
+    else
+        [self.storage addObject: valueString];
+    
     if (self.storage.count==3)
     {
         finalResult=[self caseStorageIsFull:self.storage];
@@ -46,6 +54,8 @@
 -(void) clearTheStorage
 {
     [self.storage removeAllObjects];
+    self.buferForData=@"";
+    self.buferForSign=@"";
 }
 
 
@@ -55,15 +65,23 @@
                          :(NSString*) dataEntered
 {
     NSString* finalResult;
-  
+    if(!self.storage)
+        self.storage=[[NSMutableArray alloc]init];
+
     if(self.storage.count==0)
-        [self.storage addObject:valueString];
-    if(self.storage.count==1&&countOfEqualsToBeEntered>0)
     {
-        self.storage[1]=signOfOperation;
-        self.storage[2]=valueString;
+        [self.storage addObject:valueString];
+        finalResult=self.storage[0];
+    }
+    else if(self.storage.count==1&&countOfEqualsToBeEntered>0 && (self.buferForSign))
+    {
+        self.storage[1]=self.buferForSign;
+        self.storage[2]=self.buferForData;
         finalResult=[self caseStorageIsFull:self.storage];
     }
+    else if(self.storage.count==1&&countOfEqualsToBeEntered>0 && (!self.buferForSign))
+        finalResult=self.storage[0];
+    
     if(self.storage.count==2)
     {
         if([valueString isEqual:@""])
@@ -71,17 +89,25 @@
             self.storage[2]=self.storage[0];
             valueString=dataEntered;
         }
+        
         else
         {
             finalResult=@"";
             [self.storage addObject:valueString];
+            
         }
+        
+        self.buferForData=self.storage[2];
+        self.buferForSign=signOfOperation;
+
         finalResult=[self caseStorageIsFull:self.storage];
     }
+    
     if(self.storage.count==3)
     {
         finalResult=[self caseStorageIsFull:self.storage];
     }
+    
     return finalResult;
 
 }
@@ -108,8 +134,9 @@
     //valueString=[NSString stringWithFormat:@"%g", numberOne];
 //if(self.storage.count==0)
     //    [self.storage addObject:valueString];
-    //if(self.storage.count>0 && self.storage.count<3)
-     //  self.storage[0]=valueString;
+    if(self.storage.count>0 && self.storage.count<3 && countOfEqualsToBeEntered>0)
+    valueString = self.storage[0];
+    
     //if(self.storage.count==3)
      //   self.storage[2]=valueString;
     
@@ -124,15 +151,16 @@
    //    numberOne=[self.storage[0] floatValue];
    //}
    //else
-       numberOne=[valueString floatValue];
-     numberOne*=-1;
+    numberOne=[valueString floatValue];
+    numberOne*=-1;
     valueString=[NSString stringWithFormat:@"%g", numberOne];
    
      //if(self.storage.count<3)
     // //        self.storage[0]=valueString;
     //if(self.storage.count==3)
     //      self.storage[3]=valueString;
-    
+    if(self.storage.count>0 && self.storage.count<3 && countOfEqualsToBeEntered>0)
+        self.storage[0]=valueString;
     
     return valueString;
 }
@@ -151,15 +179,16 @@
         self.result=numberOne*numberTwo;
     else if([storage[1] isEqual:@"÷"])
         self.result=numberOne/numberTwo;
-    else if([storage[1] isEqual:@"x^2"])
-        self.result=pow(numberOne,2);
-    else if([storage[1] isEqual:@"√"])
-        self.result=sqrt(numberOne);
+    
     return self.result;
 }
 
 -(NSString*)caseStorageIsFull: (NSMutableArray*) storage
+                             //: (BOOL) UnaryOperationPressed
 {
+    //if(UnaryOperationPressed)
+    //self.result=[self caseUnaryOperationIsPressed: self.storage];
+    //else
     self.result = [self calculationsDone: self.storage];
     
     NSString * finalResult=@"";
@@ -178,5 +207,52 @@
     return number; // If the string is not numeric, number will be nil
 }
 
+-(NSString*)caseDellPressed: (NSString*)valueString
+                           : (BOOL) tappedOperation
+{
+    if (!tappedOperation)
+    {
+        NSString * new = [valueString substringToIndex:[valueString length] - 1];
+        if ([new length] > 0)
+        {
+            valueString = new;
+        }
+        else
+        {
+            valueString = @"0";
+        }
+        
+    }
 
+    return valueString;
+}
+-(NSString*) caseUnaryOperationIsPressed: (NSString*)valueString
+{
+    CGFloat numberOne=[self.storage[0] floatValue];
+    [self.storage addObject:valueString];
+    
+    
+     if([self.storage[1] isEqual:@"√"])
+        self.result=sqrt(numberOne);
+     else if([self.storage[1] isEqual:@"x^2"])
+         self.result=pow(numberOne,2);
+     else if([self.storage[1] isEqual:@"x^3"])
+         self.result=pow(numberOne,3);
+     else if([self.storage[1] isEqual:@"cos"])
+         self.result = cos(numberOne);
+     else if([self.storage[1] isEqual:@"sin"])
+         self.result = sin(numberOne);
+     else if([self.storage[1] isEqual:@"tan"])
+         self.result = tan(numberOne);
+     else if([self.storage[1] isEqual:@"1/x"])
+         self.result = 1/numberOne;
+
+    NSString * finalResult=@"";
+    
+    [self.storage removeAllObjects];
+    finalResult=[NSString stringWithFormat:@"%g", self.result];
+    
+    [self.storage addObject:finalResult];
+    return finalResult;
+}
 @end
