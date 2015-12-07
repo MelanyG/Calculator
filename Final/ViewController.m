@@ -43,6 +43,7 @@
     self.valueString=@"";
     self.label.text = @"0";
     self.labelForSign.text = @"";
+    self.tappeddecimal=NO;
 }
 
 - (IBAction)numberPressed:(UIButton *)sender
@@ -108,18 +109,18 @@
                         self.valueString=@"÷";
                         break;
                     case squaredX2:
-                        self.labelForSign.text =@"x^2";
-                        self.valueString=@"x^2";
+                        self.labelForSign.text =@"x²";
+                        self.valueString=@"x²";
                         self.unaryOperationpressed=YES;
                         break;
                     case sqrt1:
-                        self.labelForSign.text =@"√";
-                        self.valueString=@"√";
+                        self.labelForSign.text =@"²√";
+                        self.valueString=@"²√";
                         self.unaryOperationpressed=YES;
                         break;
                     case squaredX3:
-                        self.labelForSign.text =@"x^3";
-                        self.valueString=@"x^3";
+                        self.labelForSign.text =@"x³";
+                        self.valueString=@"x³";
                         self.unaryOperationpressed=YES;
                         break;
                     case sinus:
@@ -142,7 +143,61 @@
                         self.valueString=@"1/x";
                         self.unaryOperationpressed=YES;
                         break;
-    
+                    case cubicsgrt:
+                        self.labelForSign.text =@"³√";
+                        self.valueString=@"³√";
+                        self.unaryOperationpressed=YES;
+                        break;
+                    case logar:
+                        self.labelForSign.text =@"ln";
+                        self.valueString=@"ln";
+                        self.unaryOperationpressed=YES;
+                        break;
+                    case logar2:
+                        self.labelForSign.text =@"log₂";
+                        self.valueString=@"log₂";
+                        self.unaryOperationpressed=YES;
+                        break;
+                    case sinusDegree:
+                        self.labelForSign.text =@"sinus in Degrees";
+                        self.valueString=@"sinDeg";
+                        self.unaryOperationpressed=YES;
+                        break;
+                    case cosinusDegree:
+                        self.labelForSign.text =@"cosenus in Degrees";
+                        self.valueString=@"cosDeg";
+                        self.unaryOperationpressed=YES;
+                        break;
+                    case tangenDegree:
+                        self.labelForSign.text =@"tangens in Degrees";
+                        self.valueString=@"tanDeg";
+                        self.unaryOperationpressed=YES;
+                        break;
+                    case logar10:
+                        self.labelForSign.text =@"log10";
+                        self.valueString=@"log10";
+                        self.unaryOperationpressed=YES;
+                        break;
+                    case Pi:
+                        self.labelForSign.text =@"π";
+                        self.valueString=@"π";
+                        self.unaryOperationpressed=YES;
+                        break;
+                    case cotng:
+                        self.labelForSign.text =@"cotangens";
+                        self.valueString=@"cotng";
+                        self.unaryOperationpressed=YES;
+                        break;
+                    case factorial:
+                        self.labelForSign.text =@"x!";
+                        self.valueString=@"x!";
+                        self.unaryOperationpressed=YES;
+                        break;
+                    case expon:
+                        self.labelForSign.text =@"e";
+                        self.valueString=@"e";
+                        self.unaryOperationpressed=YES;
+                        break;
                      default:
                         break;
                         

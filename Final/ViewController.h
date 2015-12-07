@@ -16,7 +16,7 @@ typedef enum : NSInteger {
                             minus,
                             multyplication,
                             division,
-                         } operations;
+                         } BinaryOperationType;
 typedef enum : NSInteger {
                             sqrt1=1005,
                             squaredX2=1006,
@@ -25,7 +25,19 @@ typedef enum : NSInteger {
                             cosinus=1009,
                             tangens=1010,
                             divonX=1011,
-                            } binaryOperations;
+                            cubicsgrt=1012,
+                            logar=1013,
+                            logar2=1014,
+                            cosinusDegree=1015,
+                            sinusDegree=1016,
+                            tangenDegree=1017,
+                            logar10=1018,
+                            //ctgDeg=1019,
+                            cotng=1020,
+                            Pi=1019,
+                            factorial=1021,
+                            expon=1022,
+                            } UnaryOperationType;
 
 
 @interface ViewController : UIViewController

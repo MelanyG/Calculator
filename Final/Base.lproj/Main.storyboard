@@ -251,7 +251,7 @@
                                 <rect key="frame" x="383" y="150" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="√" backgroundImage="blue1-button.png">
+                                <state key="normal" title="²√" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
@@ -439,108 +439,113 @@
                                     <rect key="frame" x="0.0" y="0.0" width="800" height="19"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ztj-1L-DRR">
+                            <button opaque="NO" tag="1017" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ztj-1L-DRR">
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="A">
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="tanDeg" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="0.0" y="60" width="99" height="67"/>
                                 </variation>
                                 <connections>
-                                    <action selector="tappedClear:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2ff-vs-quS"/>
+                                    <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kkg-J7-XSq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3x-sy-gUk">
+                            <button opaque="NO" tag="1013" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3x-sy-gUk">
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="B">
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="ln" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="100" y="60" width="99" height="67"/>
                                 </variation>
                                 <connections>
-                                    <action selector="tappedClear:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OSm-5t-lCo"/>
+                                    <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MyB-6Z-2Ak"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcB-SX-k7V">
+                            <button opaque="NO" tag="1014" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcB-SX-k7V">
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="V">
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="log₂" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="200" y="60" width="99" height="67"/>
                                 </variation>
                                 <connections>
-                                    <action selector="tappedClear:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ycd-dk-5Zd"/>
+                                    <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1Oz-vK-jIb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFa-QK-lyk">
+                            <button opaque="NO" tag="1015" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFa-QK-lyk">
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="L">
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="cosDeg" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="300" y="60" width="100" height="67"/>
                                 </variation>
                                 <connections>
-                                    <action selector="tappedClear:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Aox-Hi-cuu"/>
+                                    <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ObZ-1k-9MT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6h-w7-xWU">
+                            <button opaque="NO" tag="1016" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6h-w7-xWU">
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="D">
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="sinDeg" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="0.0" y="128" width="99" height="67"/>
                                 </variation>
                                 <connections>
-                                    <action selector="tappedClear:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hyg-6L-G4R"/>
+                                    <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="GPB-qS-WPN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sfz-P2-oyz">
+                            <button opaque="NO" tag="1020" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sfz-P2-oyz">
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="E">
+                                <state key="normal" title="ctg" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="100" y="128" width="99" height="67"/>
                                 </variation>
                                 <connections>
-                                    <action selector="tappedClear:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="viq-ma-A4M"/>
+                                    <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="90P-IC-VQD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tnu-l0-AEP">
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="I">
+                                <state key="normal" title="ctgDeg" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="200" y="128" width="99" height="67"/>
                                 </variation>
                                 <connections>
-                                    <action selector="tappedClear:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zXP-tI-3gg"/>
+                                    <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Hez-tY-l1m"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6f-tA-Sdp">
+                            <button opaque="NO" tag="1018" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6f-tA-Sdp">
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="G">
+                                <state key="normal" title="log¹⁰" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="300" y="128" width="100" height="67"/>
                                 </variation>
                                 <connections>
-                                    <action selector="tappedClear:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sId-i0-Goy"/>
+                                    <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VPC-Yv-cOb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pch-Xh-lD5">
@@ -552,67 +557,54 @@
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="0.0" y="196" width="99" height="68"/>
                                 </variation>
-                                <connections>
-                                    <action selector="tappedClear:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KU0-f6-bGe"/>
-                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjh-0T-6B3">
+                            <button opaque="NO" tag="1019" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjh-0T-6B3">
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="X">
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="π" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="100" y="196" width="99" height="68"/>
                                 </variation>
                                 <connections>
-                                    <action selector="tappedClear:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ytx-HA-01p"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hI-Sg-RrX">
-                                <rect key="frame" x="0.0" y="153" width="93" height="102"/>
-                                <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="J">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="200" y="196" width="99" height="68"/>
-                                </variation>
-                                <connections>
-                                    <action selector="tappedClear:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="j8K-K0-FfK"/>
+                                    <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZWt-ke-HHE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GoR-xi-AMg">
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="K">
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="yˣ" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="300" y="196" width="100" height="68"/>
                                 </variation>
                                 <connections>
-                                    <action selector="tappedClear:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sDI-py-YhG"/>
+                                    <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8sF-Xt-46s"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9S-Qr-Jkw">
+                            <button opaque="NO" tag="1012" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9S-Qr-Jkw">
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="N">
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="³√" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="0.0" y="265" width="99" height="67"/>
                                 </variation>
                                 <connections>
-                                    <action selector="tappedClear:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ar4-au-JXU"/>
+                                    <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6vn-t9-9u1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1011" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fx5-Fo-J5n">
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="s1/x" backgroundImage="blue1-button.png">
+                                <state key="normal" title="1/x" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
@@ -620,14 +612,13 @@
                                 </variation>
                                 <connections>
                                     <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="maW-Hg-jLx"/>
-                                    <action selector="tappedClear:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="w8E-UQ-xiK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1006" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPL-Oe-PhI">
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="x^2" backgroundImage="blue1-button.png">
+                                <state key="normal" title="x²" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
@@ -635,13 +626,12 @@
                                 </variation>
                                 <connections>
                                     <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mY5-LH-HfZ"/>
-                                    <action selector="tappedClear:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ntp-sA-r6U"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1007" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XQ-Uh-6B4">
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="x^3" backgroundImage="blue1-button.png">
+                                <state key="normal" title="x³" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
@@ -649,20 +639,20 @@
                                 </variation>
                                 <connections>
                                     <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vkP-te-9Au"/>
-                                    <action selector="tappedClear:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TJU-7u-gYV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFS-qZ-zch">
+                            <button opaque="NO" tag="10210" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFS-qZ-zch">
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="T">
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="x!" backgroundImage="blue1-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="200" y="333" width="99" height="67"/>
                                 </variation>
                                 <connections>
-                                    <action selector="tappedClear:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kyQ-QG-2cM"/>
+                                    <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Bde-lT-eRs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1008" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5C-6v-IRK">
@@ -677,7 +667,6 @@
                                 </variation>
                                 <connections>
                                     <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZDw-5f-FhG"/>
-                                    <action selector="tappedClear:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7zC-Y7-QTd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1010" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPm-SF-V1m">
@@ -692,7 +681,6 @@
                                 </variation>
                                 <connections>
                                     <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="b4h-aP-Uuh"/>
-                                    <action selector="tappedClear:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0zn-Dc-sK2"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6A-BR-oZa">
@@ -748,7 +736,20 @@
                                 </variation>
                                 <connections>
                                     <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JXG-MW-fuO"/>
-                                    <action selector="tappedClear:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rJh-Cb-XWc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1022" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hI-Sg-RrX">
+                                <rect key="frame" x="0.0" y="153" width="93" height="102"/>
+                                <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="e" backgroundImage="blue1-button.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="200" y="196" width="99" height="68"/>
+                                </variation>
+                                <connections>
+                                    <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="K5U-to-zSv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1037,7 +1038,6 @@
                                 <exclude reference="o6f-tA-Sdp"/>
                                 <exclude reference="Pch-Xh-lD5"/>
                                 <exclude reference="sjh-0T-6B3"/>
-                                <exclude reference="7hI-Sg-RrX"/>
                                 <exclude reference="GoR-xi-AMg"/>
                                 <exclude reference="i9S-Qr-Jkw"/>
                                 <exclude reference="Fx5-Fo-J5n"/>
@@ -1047,6 +1047,7 @@
                                 <exclude reference="r5C-6v-IRK"/>
                                 <exclude reference="UPm-SF-V1m"/>
                                 <exclude reference="Dp7-md-XnO"/>
+                                <exclude reference="7hI-Sg-RrX"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="bDC-k8-UhW"/>
@@ -1333,7 +1334,6 @@
                                 <include reference="o6f-tA-Sdp"/>
                                 <include reference="Pch-Xh-lD5"/>
                                 <include reference="sjh-0T-6B3"/>
-                                <include reference="7hI-Sg-RrX"/>
                                 <include reference="GoR-xi-AMg"/>
                                 <include reference="i9S-Qr-Jkw"/>
                                 <include reference="Fx5-Fo-J5n"/>
@@ -1343,6 +1343,7 @@
                                 <include reference="r5C-6v-IRK"/>
                                 <include reference="UPm-SF-V1m"/>
                                 <include reference="Dp7-md-XnO"/>
+                                <include reference="7hI-Sg-RrX"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="bDC-k8-UhW"/>

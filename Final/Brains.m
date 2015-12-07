@@ -232,20 +232,42 @@
     [self.storage addObject:valueString];
     
     
-     if([self.storage[1] isEqual:@"√"])
+     if([self.storage[1] isEqual:@"²√"])
         self.result=sqrt(numberOne);
-     else if([self.storage[1] isEqual:@"x^2"])
+     else if([self.storage[1] isEqual:@"x²"])
          self.result=pow(numberOne,2);
-     else if([self.storage[1] isEqual:@"x^3"])
+     else if([self.storage[1] isEqual:@"x³"])
          self.result=pow(numberOne,3);
      else if([self.storage[1] isEqual:@"cos"])
-         self.result = cos(numberOne);
+         self.result = cos(numberOne*3.14159265/180);
      else if([self.storage[1] isEqual:@"sin"])
-         self.result = sin(numberOne);
+         self.result = sin(numberOne*3.14159265/180);
      else if([self.storage[1] isEqual:@"tan"])
-         self.result = tan(numberOne);
+         self.result = tan(numberOne*3.14159265/180);
      else if([self.storage[1] isEqual:@"1/x"])
          self.result = 1/numberOne;
+     else if([self.storage[1] isEqual:@"³√"])
+         self.result = cbrt(numberOne);
+     else if([self.storage[1] isEqual:@"ln"])
+         self.result = log(numberOne);
+     else if([self.storage[1] isEqual:@"log₂"])
+         self.result = log2(numberOne);
+     else if([self.storage[1] isEqual:@"cosDeg"])
+         self.result = acos(numberOne)* 180 / 3.14159265;
+       else if([self.storage[1] isEqual:@"sinDeg"])
+         self.result = asin(numberOne)* 180 / 3.14159265;
+     else if([self.storage[1] isEqual:@"tanDeg"])
+         self.result = atan (numberOne) * 180 / 3.14159265;
+     else if([self.storage[1] isEqual:@"log10"])
+         self.result = log10(numberOne) ;
+     else if([self.storage[1] isEqual:@"ctg"])
+         self.result = 1/tan(numberOne);
+     else if([self.storage[1] isEqual:@"π"])
+         self.result = 3.14159265;
+     else if([self.storage[1] isEqual:@"x!"])
+         self.result = tgamma(numberOne);
+     else if([self.storage[1] isEqual:@"e"])
+         self.result = 2.71828182;
 
     NSString * finalResult=@"";
     
