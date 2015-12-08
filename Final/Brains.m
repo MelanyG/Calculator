@@ -31,11 +31,11 @@
 }
 
 -(NSString*)addingElementsToStorage:(NSString*)valueString
-                                   : (BOOL) tappedOperation;
+                                   : (BOOL) tappedOperation
+                                   : (BOOL)unaryOperationPressed;
 {
     NSString* finalResult;
-    if(!self.storage)
-    self.storage=[[NSMutableArray alloc]init];
+    
     
     if(tappedOperation)
         self.storage[1]=valueString;
@@ -44,6 +44,12 @@
     
     if (self.storage.count==3)
     {
+        if(unaryOperationPressed)
+        {
+            return valueString;
+            //[self caseUnaryOperationIsPressed: valueString];
+            
+        }
         finalResult=[self caseStorageIsFull:self.storage];
         return finalResult;
      }
@@ -58,6 +64,25 @@
     self.buferForSign=@"";
 }
 
+-(NSString*) caseConstantIsSelected:(NSString*)valueString
+{
+        
+    if([valueString isEqual:@"π"])
+    self.result = 3.14159265;
+    else if([valueString isEqual:@"e"])
+        self.result = 2.71828182;
+    
+    valueString=[NSString stringWithFormat:@"%g", self.result];
+    
+    return valueString;
+}
+
+-(void) creationOfStorage
+{
+    if(!self.storage)
+        self.storage=[[NSMutableArray alloc]init];
+
+}
 
 -(NSString*)equalsPressed:(NSInteger)countOfEqualsToBeEntered
                          :(NSString*)valueString
@@ -65,8 +90,6 @@
                          :(NSString*) dataEntered
 {
     NSString* finalResult;
-    if(!self.storage)
-        self.storage=[[NSMutableArray alloc]init];
 
     if(self.storage.count==0)
     {
@@ -117,51 +140,20 @@
                           :(NSString*)valueString
 {
     CGFloat numberOne;
-    //if(!self.storage)
-       // self.storage=[[NSMutableArray alloc]init];
-
-    //if([self stringIsNumeric: valueString]&&self.storage.count==2)
-    //{
-    //    [self.storage addObject:valueString];
-    //    numberOne=[valueString floatValue];
-    //}
-    //else if(self.storage.count==1)
-    ///    numberOne=[self.storage[0] floatValue];
-    //else
-    //    numberOne=[valueString floatValue];
-   
-    //numberOne*=-1;
-    //valueString=[NSString stringWithFormat:@"%g", numberOne];
-//if(self.storage.count==0)
-    //    [self.storage addObject:valueString];
     if(self.storage.count>0 && self.storage.count<3 && countOfEqualsToBeEntered>0)
     valueString = self.storage[0];
-    
-    //if(self.storage.count==3)
-     //   self.storage[2]=valueString;
-    
-    
-    
-    
-   // if([self stringIsNumeric: valueString]&&self.storage.count==2)
-   //             [self.storage addObject:valueString];
-   //if(self.storage.count<3)
-   //{
-   //    [self.storage addObject:valueString];
-   //    numberOne=[self.storage[0] floatValue];
-   //}
-   //else
+    else if(self.storage.count==1)
+        valueString=self.storage[0];
+
     numberOne=[valueString floatValue];
     numberOne*=-1;
     valueString=[NSString stringWithFormat:@"%g", numberOne];
    
-     //if(self.storage.count<3)
-    // //        self.storage[0]=valueString;
-    //if(self.storage.count==3)
-    //      self.storage[3]=valueString;
     if(self.storage.count>0 && self.storage.count<3 && countOfEqualsToBeEntered>0)
         self.storage[0]=valueString;
-    
+    else if(self.storage.count==1)
+     self.storage[0]=valueString;
+
     return valueString;
 }
 
@@ -186,9 +178,6 @@
 -(NSString*)caseStorageIsFull: (NSMutableArray*) storage
                              //: (BOOL) UnaryOperationPressed
 {
-    //if(UnaryOperationPressed)
-    //self.result=[self caseUnaryOperationIsPressed: self.storage];
-    //else
     self.result = [self calculationsDone: self.storage];
     
     NSString * finalResult=@"";
@@ -228,53 +217,69 @@
 }
 -(NSString*) caseUnaryOperationIsPressed: (NSString*)valueString
 {
-    CGFloat numberOne=[self.storage[0] floatValue];
+    NSInteger i, j;
+    if(self.storage.count==1)
+        i=0,j=1;
+    else if (self.storage.count==3)
+        i=2, j=3;
+    CGFloat numberOne=[self.storage[i] floatValue];
     [self.storage addObject:valueString];
     
     
-     if([self.storage[1] isEqual:@"²√"])
+     if([self.storage[j] isEqual:@"²√"])
         self.result=sqrt(numberOne);
-     else if([self.storage[1] isEqual:@"x²"])
+     else if([self.storage[j] isEqual:@"x²"])
          self.result=pow(numberOne,2);
-     else if([self.storage[1] isEqual:@"x³"])
+     else if([self.storage[j] isEqual:@"x³"])
          self.result=pow(numberOne,3);
-     else if([self.storage[1] isEqual:@"cos"])
+     else if([self.storage[j] isEqual:@"cos"])
          self.result = cos(numberOne*3.14159265/180);
-     else if([self.storage[1] isEqual:@"sin"])
+     else if([self.storage[j] isEqual:@"sin"])
          self.result = sin(numberOne*3.14159265/180);
-     else if([self.storage[1] isEqual:@"tan"])
+     else if([self.storage[j] isEqual:@"tan"])
          self.result = tan(numberOne*3.14159265/180);
-     else if([self.storage[1] isEqual:@"1/x"])
+     else if([self.storage[j] isEqual:@"1/x"])
          self.result = 1/numberOne;
-     else if([self.storage[1] isEqual:@"³√"])
+     else if([self.storage[j] isEqual:@"³√"])
          self.result = cbrt(numberOne);
-     else if([self.storage[1] isEqual:@"ln"])
+     else if([self.storage[j] isEqual:@"ln"])
          self.result = log(numberOne);
-     else if([self.storage[1] isEqual:@"log₂"])
+     else if([self.storage[j] isEqual:@"log₂"])
          self.result = log2(numberOne);
-     else if([self.storage[1] isEqual:@"cosDeg"])
+     else if([self.storage[j] isEqual:@"cosDeg"])
          self.result = acos(numberOne)* 180 / 3.14159265;
-       else if([self.storage[1] isEqual:@"sinDeg"])
+       else if([self.storage[j] isEqual:@"sinDeg"])
          self.result = asin(numberOne)* 180 / 3.14159265;
-     else if([self.storage[1] isEqual:@"tanDeg"])
+     else if([self.storage[j] isEqual:@"tanDeg"])
          self.result = atan (numberOne) * 180 / 3.14159265;
-     else if([self.storage[1] isEqual:@"log10"])
+     else if([self.storage[j] isEqual:@"log10"])
          self.result = log10(numberOne) ;
-     else if([self.storage[1] isEqual:@"ctg"])
-         self.result = 1/tan(numberOne);
-     else if([self.storage[1] isEqual:@"π"])
-         self.result = 3.14159265;
-     else if([self.storage[1] isEqual:@"x!"])
-         self.result = tgamma(numberOne);
-     else if([self.storage[1] isEqual:@"e"])
-         self.result = 2.71828182;
+     else if([self.storage[j] isEqual:@"cotng"])
+         self.result = 1/tan(numberOne*3.14159265/180);
+     else if([self.storage[j] isEqual:@"x!"])
+         self.result = tgamma(numberOne + 1);
+     else if([self.storage[j] isEqual:@"%"])
+         self.result = numberOne/100;
+     else if([self.storage[j] isEqual:@"exp"])
+         self.result = exp(numberOne);
+     else if([self.storage[j] isEqual:@"exp2"])
+         self.result = exp2(numberOne);
 
     NSString * finalResult=@"";
     
+    if(self.storage.count>3)
+    {
+        [self.storage removeObject:self.storage[3]];
+        [self.storage removeObject:self.storage[2]];
+    }
+    else
     [self.storage removeAllObjects];
+    
     finalResult=[NSString stringWithFormat:@"%g", self.result];
     
     [self.storage addObject:finalResult];
+
+        
     return finalResult;
 }
 @end

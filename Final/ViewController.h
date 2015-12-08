@@ -32,11 +32,13 @@ typedef enum : NSInteger {
                             sinusDegree=1016,
                             tangenDegree=1017,
                             logar10=1018,
-                            //ctgDeg=1019,
-                            cotng=1020,
                             Pi=1019,
+                            cotng=1020,
                             factorial=1021,
                             expon=1022,
+                            percent=1025,
+                            exponencial=1026,
+                            exponencial2=1027,
                             } UnaryOperationType;
 
 
@@ -55,6 +57,7 @@ typedef enum : NSInteger {
 - (IBAction)operationPressed:(UIButton *)sender;
 - (IBAction)changeSignPressed:(UIButton *)sender;
 - (IBAction)tappedDellLastNumber:(UIButton *)sender;
+- (IBAction)constantButtonPressed:(UIButton *)sender;
 
 
 

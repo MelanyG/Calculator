@@ -18,6 +18,7 @@
 @property(strong, nonatomic)NSMutableArray *storage;
 @property(nonatomic) NSInteger countOfEqualsToBeEntered;
 @property(nonatomic) BOOL unaryOperationpressed;
+@property(nonatomic) NSInteger countOfUnaryOperationsToBeEntered;
 
 
 @end
@@ -33,6 +34,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.valueString=@"";
     brain = [Brains createSinglton];
+    [brain creationOfStorage];
     
 }
 
@@ -44,6 +46,7 @@
     self.label.text = @"0";
     self.labelForSign.text = @"";
     self.tappeddecimal=NO;
+    self.countOfUnaryOperationsToBeEntered=0;
 }
 
 - (IBAction)numberPressed:(UIButton *)sender
@@ -52,6 +55,8 @@
     self.tappedEquals=NO;
     self.tappedOperation=NO;
     self.unaryOperationpressed=NO;
+    self.countOfUnaryOperationsToBeEntered=0;
+    
     
     NSString *number=[NSString stringWithFormat:@"%li",(long)sender.tag];
     self.valueString = [self.valueString stringByAppendingString:number];
@@ -67,7 +72,10 @@
 {
     if(!self.tappeddecimal)
     {
-        self.valueString = [self.valueString stringByAppendingString:@"."];
+        if([self.label.text isEqualToString: @"0"])
+        self.valueString = [self.valueString stringByAppendingString:@"0."];
+        else
+            self.valueString = [self.valueString stringByAppendingString:@"0."];
         self.label.text = self.valueString;
      
     }
@@ -77,15 +85,30 @@
 
 - (IBAction)operationPressed:(UIButton *)sender
 {
+    NSSet *unaryOperations=[[NSSet alloc]initWithObjects: @"1005",@"1006",@"1007",@"1008",@"1009",@"1010",@"1011",@"1012",
+        @"1013",@"1014",@"1015",@"1016",@"1017",@"1018",@"1020", @"1025",
+        @"1021",@"1026",@"1027", nil];
     if(self.tappedOperation==NO)
     {
 
         self.tappeddecimal=NO;
             if((self.tappedEquals==NO) && (self.unaryOperationpressed==NO))
             {
+                UnaryOperationType unary = sender.tag;
+                NSString* tmp=[NSString stringWithFormat:@"%ld", unary];
+               if([unaryOperations containsObject:tmp])
+               {
+                   self.unaryOperationpressed=YES;
+                   self.countOfUnaryOperationsToBeEntered++;
+               }
+                //if(self.countOfUnaryOperationsToBeEntered==1)
+                //{
                 self.valueString=[brain addingElementsToStorage: self.valueString
-                                                               : self.tappedOperation];
+                                                               : self.tappedOperation
+                                                               : self.unaryOperationpressed];
                 self.label.text=self.valueString;
+            
+                }
             }
       
         self.valueString=@"";
@@ -109,118 +132,102 @@
                         self.valueString=@"÷";
                         break;
                     case squaredX2:
-                        self.labelForSign.text =@"x²";
                         self.valueString=@"x²";
                         self.unaryOperationpressed=YES;
                         break;
                     case sqrt1:
-                        self.labelForSign.text =@"²√";
                         self.valueString=@"²√";
                         self.unaryOperationpressed=YES;
                         break;
                     case squaredX3:
-                        self.labelForSign.text =@"x³";
                         self.valueString=@"x³";
                         self.unaryOperationpressed=YES;
                         break;
                     case sinus:
-                        self.labelForSign.text =@"sin";
                         self.valueString=@"sin";
                         self.unaryOperationpressed=YES;
                         break;
                     case cosinus:
-                        self.labelForSign.text =@"cos";
                         self.valueString=@"cos";
                         self.unaryOperationpressed=YES;
                         break;
                     case tangens:
-                        self.labelForSign.text =@"tan";
                         self.valueString=@"tan";
                         self.unaryOperationpressed=YES;
                         break;
                     case divonX:
-                        self.labelForSign.text =@"1/x";
                         self.valueString=@"1/x";
                         self.unaryOperationpressed=YES;
                         break;
                     case cubicsgrt:
-                        self.labelForSign.text =@"³√";
                         self.valueString=@"³√";
                         self.unaryOperationpressed=YES;
                         break;
                     case logar:
-                        self.labelForSign.text =@"ln";
                         self.valueString=@"ln";
                         self.unaryOperationpressed=YES;
                         break;
                     case logar2:
-                        self.labelForSign.text =@"log₂";
                         self.valueString=@"log₂";
                         self.unaryOperationpressed=YES;
                         break;
                     case sinusDegree:
-                        self.labelForSign.text =@"sinus in Degrees";
                         self.valueString=@"sinDeg";
                         self.unaryOperationpressed=YES;
                         break;
                     case cosinusDegree:
-                        self.labelForSign.text =@"cosenus in Degrees";
                         self.valueString=@"cosDeg";
                         self.unaryOperationpressed=YES;
                         break;
                     case tangenDegree:
-                        self.labelForSign.text =@"tangens in Degrees";
                         self.valueString=@"tanDeg";
                         self.unaryOperationpressed=YES;
                         break;
                     case logar10:
-                        self.labelForSign.text =@"log10";
                         self.valueString=@"log10";
                         self.unaryOperationpressed=YES;
                         break;
-                    case Pi:
-                        self.labelForSign.text =@"π";
-                        self.valueString=@"π";
-                        self.unaryOperationpressed=YES;
-                        break;
                     case cotng:
-                        self.labelForSign.text =@"cotangens";
                         self.valueString=@"cotng";
                         self.unaryOperationpressed=YES;
                         break;
                     case factorial:
-                        self.labelForSign.text =@"x!";
                         self.valueString=@"x!";
                         self.unaryOperationpressed=YES;
                         break;
-                    case expon:
-                        self.labelForSign.text =@"e";
-                        self.valueString=@"e";
+                    case percent:
+                        self.valueString=@"%";
                         self.unaryOperationpressed=YES;
                         break;
-                     default:
+                    case exponencial:
+                        self.valueString=@"exp";
+                        self.unaryOperationpressed=YES;
+                        break;
+                    case exponencial2:
+                        self.valueString=@"exp2";
+                        self.unaryOperationpressed=YES;
+                        break;
+                    default:
                         break;
                         
                 }
         if(self.unaryOperationpressed)
         {
             self.label.text=[brain caseUnaryOperationIsPressed: self.valueString];
-            //self.labelForSign.text=@"";
             self.unaryOperationpressed=NO;
             self.tappedOperation=NO;
-            //[brain addingElementsToStorage: self.valueString
-                                          //: self.tappedOperation];
         }
-        if(self.tappedOperation)
+        if(self.tappedOperation && !self.unaryOperationpressed)
         {
             [brain addingElementsToStorage: self.valueString
-                                          : self.tappedOperation];
+                                          : self.tappedOperation
+                                          : self.unaryOperationpressed];
         }
  
             self.valueString=@"";
     }
       
-}
+
 
 
 
@@ -240,15 +247,33 @@
     self.label.text=self.valueString;
 }
 
+- (IBAction)constantButtonPressed:(UIButton *)sender
+{
+    switch(sender.tag)
+    {
+        case Pi:
+            self.valueString=@"π";
+            break;
+        case expon:
+            self.valueString=@"e";
+            break;
+        default:
+            break;
+    }
+     self.label.text=[brain caseConstantIsSelected:self.valueString];
+    self.valueString=self.label.text;
+   
+}
+
 - (IBAction)equalPressed:(UIButton *)sender
 {
     self.tappedEquals=YES;
     self.countOfEqualsToBeEntered++;
+    self.countOfUnaryOperationsToBeEntered=0;
     NSString* result=[brain equalsPressed:self.countOfEqualsToBeEntered
                                          :self.valueString
                                          :self.labelForSign.text
                                          :self.label.text];
-    //self.valueString=self.label.text; // added for 2+=;
     self.label.text=result;
     self.labelForSign.text=@"";
    
