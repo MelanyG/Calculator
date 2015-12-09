@@ -72,13 +72,17 @@
 {
     if(!self.tappeddecimal)
     {
-        if([self.label.text isEqualToString: @"0"])
-        self.valueString = [self.valueString stringByAppendingString:@"0."];
-        else
+        if([self.label.text isEqualToString: @"0"]&& [self.valueString isEqualToString:@"0"])
+            self.valueString = [self.valueString stringByAppendingString:@"."];
+        else if([self.label.text isEqualToString: @"0"]&&[self.valueString isEqualToString:@""])
             self.valueString = [self.valueString stringByAppendingString:@"0."];
-        self.label.text = self.valueString;
-     
+        else if([self.valueString isEqual:@""])
+            self.valueString = [self.valueString stringByAppendingString:@"0."];
     }
+    
+    
+        self.label.text = self.valueString;
+    
     self.tappeddecimal=YES;
 }
 

@@ -20,7 +20,7 @@
                                 <rect key="frame" x="282" y="553" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="." backgroundImage="blue1-button.png">
+                                <state key="normal" title="." backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
@@ -40,7 +40,7 @@
                                 <rect key="frame" x="383" y="559" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="=" backgroundImage="blue1-button.png">
+                                <state key="normal" title="=" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
@@ -59,7 +59,7 @@
                             <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhh-tr-cqh">
                                 <rect key="frame" x="282" y="452" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="2" backgroundImage="blue1-button.png">
+                                <state key="normal" title="2" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
@@ -78,7 +78,7 @@
                             <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="890-QS-800">
                                 <rect key="frame" x="187" y="452" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="1" backgroundImage="blue1-button.png">
+                                <state key="normal" title="1" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
@@ -97,7 +97,7 @@
                             <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a43-lS-dGc">
                                 <rect key="frame" x="282" y="352" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="5" backgroundImage="blue1-button.png">
+                                <state key="normal" title="5" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
@@ -116,7 +116,7 @@
                             <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3p-qA-Wjx">
                                 <rect key="frame" x="383" y="456" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="3" backgroundImage="blue1-button.png">
+                                <state key="normal" title="3" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
@@ -135,7 +135,7 @@
                             <button opaque="NO" tag="6" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPL-Fm-lsx">
                                 <rect key="frame" x="383" y="356" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="6" backgroundImage="blue1-button.png">
+                                <state key="normal" title="6" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
@@ -154,7 +154,7 @@
                             <button opaque="NO" tag="7" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCf-AT-4Wq">
                                 <rect key="frame" x="187" y="252" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="7" backgroundImage="blue1-button.png">
+                                <state key="normal" title="7" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
@@ -173,7 +173,7 @@
                             <button opaque="NO" tag="8" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xe1-vp-DLj">
                                 <rect key="frame" x="282" y="252" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="8" backgroundImage="blue1-button.png">
+                                <state key="normal" title="8" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
@@ -192,7 +192,7 @@
                             <button opaque="NO" tag="9" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9b-p2-nnD">
                                 <rect key="frame" x="383" y="252" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="9" backgroundImage="blue1-button.png">
+                                <state key="normal" title="9" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
@@ -212,7 +212,7 @@
                                 <rect key="frame" x="282" y="150" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Del" backgroundImage="blue1-button.png">
+                                <state key="normal" title="Del" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
@@ -231,7 +231,7 @@
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yvq-jO-XDo">
                                 <rect key="frame" x="187" y="150" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="C" backgroundImage="blue1-button.png">
+                                <state key="normal" title="C" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
@@ -251,7 +251,7 @@
                                 <rect key="frame" x="383" y="150" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="²√" backgroundImage="blue1-button.png">
+                                <state key="normal" title="²√" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
@@ -270,7 +270,7 @@
                             <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aa-Qc-X0v">
                                 <rect key="frame" x="187" y="352" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="4" backgroundImage="blue1-button.png">
+                                <state key="normal" title="4" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
@@ -289,7 +289,7 @@
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0M-rL-JBE">
                                 <rect key="frame" x="187" y="553" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="0" backgroundImage="blue1-button.png">
+                                <state key="normal" title="0" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
@@ -309,7 +309,7 @@
                                 <rect key="frame" x="491" y="356" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="*" backgroundImage="blue1-button.png">
+                                <state key="normal" title="*" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
@@ -329,7 +329,7 @@
                                 <rect key="frame" x="491" y="249" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="÷" backgroundImage="blue1-button.png">
+                                <state key="normal" title="÷" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
@@ -349,7 +349,7 @@
                                 <rect key="frame" x="491" y="150" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="+/-" backgroundImage="blue1-button.png">
+                                <state key="normal" title="+/-" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
@@ -369,7 +369,7 @@
                                 <rect key="frame" x="491" y="553" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="+" backgroundImage="blue1-button.png">
+                                <state key="normal" title="+" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
@@ -389,7 +389,7 @@
                                 <rect key="frame" x="491" y="456" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="-" backgroundImage="blue1-button.png">
+                                <state key="normal" title="-" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
@@ -443,12 +443,9 @@
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="tanDeg" backgroundImage="blue1-button.png">
+                                <state key="normal" title="tanDeg" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="60" width="99" height="67"/>
-                                </variation>
                                 <connections>
                                     <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kkg-J7-XSq"/>
                                 </connections>
@@ -457,12 +454,9 @@
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="ln" backgroundImage="blue1-button.png">
+                                <state key="normal" title="ln" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="100" y="60" width="99" height="67"/>
-                                </variation>
                                 <connections>
                                     <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MyB-6Z-2Ak"/>
                                 </connections>
@@ -471,12 +465,9 @@
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="log₂" backgroundImage="blue1-button.png">
+                                <state key="normal" title="log₂" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="200" y="60" width="99" height="67"/>
-                                </variation>
                                 <connections>
                                     <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1Oz-vK-jIb"/>
                                 </connections>
@@ -485,12 +476,9 @@
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="cosDeg" backgroundImage="blue1-button.png">
+                                <state key="normal" title="cosDeg" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="300" y="60" width="100" height="67"/>
-                                </variation>
                                 <connections>
                                     <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ObZ-1k-9MT"/>
                                 </connections>
@@ -499,12 +487,9 @@
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="sinDeg" backgroundImage="blue1-button.png">
+                                <state key="normal" title="sinDeg" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="128" width="99" height="67"/>
-                                </variation>
                                 <connections>
                                     <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="GPB-qS-WPN"/>
                                 </connections>
@@ -512,12 +497,9 @@
                             <button opaque="NO" tag="1020" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sfz-P2-oyz">
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="ctg" backgroundImage="blue1-button.png">
+                                <state key="normal" title="ctg" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="100" y="128" width="99" height="67"/>
-                                </variation>
                                 <connections>
                                     <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="90P-IC-VQD"/>
                                 </connections>
@@ -525,12 +507,9 @@
                             <button opaque="NO" tag="1026" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tnu-l0-AEP">
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="exp" backgroundImage="blue1-button.png">
+                                <state key="normal" title="exp" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="200" y="128" width="99" height="67"/>
-                                </variation>
                                 <connections>
                                     <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Hez-tY-l1m"/>
                                 </connections>
@@ -538,12 +517,9 @@
                             <button opaque="NO" tag="1018" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6f-tA-Sdp">
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="log¹⁰" backgroundImage="blue1-button.png">
+                                <state key="normal" title="log¹⁰" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="300" y="128" width="100" height="67"/>
-                                </variation>
                                 <connections>
                                     <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VPC-Yv-cOb"/>
                                 </connections>
@@ -551,23 +527,17 @@
                             <button opaque="NO" tag="1027" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pch-Xh-lD5">
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="exp2" backgroundImage="blue1-button.png">
+                                <state key="normal" title="exp2" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="196" width="99" height="68"/>
-                                </variation>
                             </button>
                             <button opaque="NO" tag="1025" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GoR-xi-AMg">
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="%" backgroundImage="blue1-button.png">
+                                <state key="normal" title="%" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="300" y="196" width="100" height="68"/>
-                                </variation>
                                 <connections>
                                     <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JVk-uW-lok"/>
                                 </connections>
@@ -576,12 +546,9 @@
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="³√" backgroundImage="blue1-button.png">
+                                <state key="normal" title="³√" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="265" width="99" height="67"/>
-                                </variation>
                                 <connections>
                                     <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6vn-t9-9u1"/>
                                 </connections>
@@ -590,12 +557,9 @@
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="1/x" backgroundImage="blue1-button.png">
+                                <state key="normal" title="1/x" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="100" y="265" width="99" height="67"/>
-                                </variation>
                                 <connections>
                                     <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="maW-Hg-jLx"/>
                                 </connections>
@@ -604,12 +568,9 @@
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="x²" backgroundImage="blue1-button.png">
+                                <state key="normal" title="x²" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="200" y="265" width="99" height="67"/>
-                                </variation>
                                 <connections>
                                     <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mY5-LH-HfZ"/>
                                 </connections>
@@ -617,12 +578,9 @@
                             <button opaque="NO" tag="1007" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XQ-Uh-6B4">
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="x³" backgroundImage="blue1-button.png">
+                                <state key="normal" title="x³" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="300" y="265" width="100" height="67"/>
-                                </variation>
                                 <connections>
                                     <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vkP-te-9Au"/>
                                 </connections>
@@ -631,12 +589,9 @@
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="x!" backgroundImage="blue1-button.png">
+                                <state key="normal" title="x!" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="200" y="333" width="99" height="67"/>
-                                </variation>
                                 <connections>
                                     <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Bde-lT-eRs"/>
                                 </connections>
@@ -645,12 +600,9 @@
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="sin" backgroundImage="blue1-button.png">
+                                <state key="normal" title="sin" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="300" y="333" width="100" height="67"/>
-                                </variation>
                                 <connections>
                                     <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZDw-5f-FhG"/>
                                 </connections>
@@ -659,12 +611,9 @@
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="tan" backgroundImage="blue1-button.png">
+                                <state key="normal" title="tan" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="333" width="99" height="67"/>
-                                </variation>
                                 <connections>
                                     <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="b4h-aP-Uuh"/>
                                 </connections>
@@ -714,12 +663,9 @@
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="cos" backgroundImage="blue1-button.png">
+                                <state key="normal" title="cos" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="100" y="333" width="99" height="67"/>
-                                </variation>
                                 <connections>
                                     <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JXG-MW-fuO"/>
                                 </connections>
@@ -728,12 +674,9 @@
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="e" backgroundImage="blue1-button.png">
+                                <state key="normal" title="e" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="200" y="196" width="99" height="68"/>
-                                </variation>
                                 <connections>
                                     <action selector="constantButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4Co-j9-qyE"/>
                                 </connections>
@@ -742,12 +685,9 @@
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="π" backgroundImage="blue1-button.png">
+                                <state key="normal" title="π" backgroundImage="blue1-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="100" y="196" width="99" height="68"/>
-                                </variation>
                                 <connections>
                                     <action selector="constantButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sNt-3d-dmR"/>
                                 </connections>
@@ -1634,6 +1574,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="blue1-button.png" width="500" height="346"/>
+        <image name="blue1-button" width="500" height="346"/>
     </resources>
 </document>

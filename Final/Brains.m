@@ -110,12 +110,12 @@
         if([valueString isEqual:@""])
         {
             self.storage[2]=self.storage[0];
-            valueString=dataEntered;
+            //valueString=dataEntered;
         }
         
         else
         {
-            finalResult=@"";
+           // finalResult=@"";
             [self.storage addObject:valueString];
             
         }
@@ -217,11 +217,11 @@
 }
 -(NSString*) caseUnaryOperationIsPressed: (NSString*)valueString
 {
-    NSInteger i, j;
-    if(self.storage.count==1)
-        i=0,j=1;
-    else if (self.storage.count==3)
+    NSInteger i=0, j=1;
+    
+    if (self.storage.count==3)
         i=2, j=3;
+
     CGFloat numberOne=[self.storage[i] floatValue];
     [self.storage addObject:valueString];
     
