@@ -138,12 +138,18 @@
 
 -(NSString*)caseChangeSign:(NSInteger)countOfEqualsToBeEntered
                           :(NSString*)valueString
+                          : (BOOL) numbersArePressed;
 {
     CGFloat numberOne;
     if(self.storage.count>0 && self.storage.count<3 && countOfEqualsToBeEntered>0)
-    valueString = self.storage[0];
+        valueString = self.storage[0];
     else if(self.storage.count==1)
         valueString=self.storage[0];
+    else if(self.storage.count==2 && !countOfEqualsToBeEntered&&numbersArePressed==NO)
+        valueString=self.storage[0];
+    else if(self.storage.count==2 && numbersArePressed==YES)
+        valueString=valueString;
+    
 
     numberOne=[valueString floatValue];
     numberOne*=-1;
@@ -152,7 +158,11 @@
     if(self.storage.count>0 && self.storage.count<3 && countOfEqualsToBeEntered>0)
         self.storage[0]=valueString;
     else if(self.storage.count==1)
-     self.storage[0]=valueString;
+        self.storage[0]=valueString;
+    else if(self.storage.count==2 && !countOfEqualsToBeEntered&&numbersArePressed==NO)
+        self.storage[0]=valueString;
+    else if(self.storage.count==2 && numbersArePressed==YES)
+       [self.storage addObject:valueString];
 
     return valueString;
 }
@@ -198,22 +208,30 @@
 
 -(NSString*)caseDellPressed: (NSString*)valueString
                            : (BOOL) tappedOperation
+                           : (BOOL)equalsPressed
 {
-    if (!tappedOperation)
+    //if (!tappedOperation&&!equalsPressed)
+   //{
+    
+     
+  
+    //}
+    if(equalsPressed)
+        valueString=self.storage[0];
+      NSString * new = [valueString substringToIndex:[valueString length] - 1];
+    
+    if ([new length] > 0)
     {
-        NSString * new = [valueString substringToIndex:[valueString length] - 1];
-        if ([new length] > 0)
-        {
-            valueString = new;
-        }
-        else
-        {
-            valueString = @"0";
-        }
-        
+        valueString = new;
+    }
+    else
+    {
+        valueString = @"0";
     }
 
-    return valueString;
+    if(equalsPressed)
+        self.storage[0]=valueString;
+      return valueString;
 }
 -(NSString*) caseUnaryOperationIsPressed: (NSString*)valueString
 {

@@ -19,6 +19,7 @@
 @property(nonatomic) NSInteger countOfEqualsToBeEntered;
 @property(nonatomic) BOOL unaryOperationpressed;
 @property(nonatomic) NSInteger countOfUnaryOperationsToBeEntered;
+@property(nonatomic) BOOL numbersAreEntered;
 
 
 @end
@@ -55,6 +56,7 @@
     self.tappedEquals=NO;
     self.tappedOperation=NO;
     self.unaryOperationpressed=NO;
+    self.numbersAreEntered=YES;
     self.countOfUnaryOperationsToBeEntered=0;
     
     
@@ -72,12 +74,12 @@
 {
     if(!self.tappeddecimal)
     {
-        if([self.label.text isEqualToString: @"0"]&& [self.valueString isEqualToString:@"0"])
-            self.valueString = [self.valueString stringByAppendingString:@"."];
+        if(![self.label.text isEqualToString: @"0"]&& [self.valueString isEqualToString:@""])
+            self.valueString = [self.valueString stringByAppendingString:@"0."];
         else if([self.label.text isEqualToString: @"0"]&&[self.valueString isEqualToString:@""])
             self.valueString = [self.valueString stringByAppendingString:@"0."];
-        else if([self.valueString isEqual:@""])
-            self.valueString = [self.valueString stringByAppendingString:@"0."];
+        else if(![self.valueString isEqual:@""])
+            self.valueString = [self.valueString stringByAppendingString:@"."];
     }
     
     
@@ -89,6 +91,7 @@
 
 - (IBAction)operationPressed:(UIButton *)sender
 {
+    self.numbersAreEntered=NO;
     NSSet *unaryOperations=[[NSSet alloc]initWithObjects: @"1005",@"1006",@"1007",@"1008",@"1009",@"1010",@"1011",@"1012",
         @"1013",@"1014",@"1015",@"1016",@"1017",@"1018",@"1020", @"1025",
         @"1021",@"1026",@"1027", nil];
@@ -107,7 +110,7 @@
                }
                 //if(self.countOfUnaryOperationsToBeEntered==1)
                 //{
-                self.valueString=[brain addingElementsToStorage: self.valueString
+                self.valueString=[brain addingElementsToStorage: self.label.text
                                                                : self.tappedOperation
                                                                : self.unaryOperationpressed];
                 self.label.text=self.valueString;
@@ -237,22 +240,28 @@
 
 - (IBAction)changeSignPressed:(UIButton *)sender
 {
+   
     self.valueString=[brain caseChangeSign: self.countOfEqualsToBeEntered
-                                          : self.valueString];
-    
+                                          : self.valueString
+                                          : self.numbersAreEntered];
+    self.numbersAreEntered=NO;
     self.label.text=self.valueString;
-   }
+    self.valueString=@"";
+}
 
 - (IBAction)tappedDellLastNumber:(UIButton *)sender
 {
     self.valueString = [brain caseDellPressed: self.valueString
-                                             : self.tappedOperation];
+                                             : self.tappedOperation
+                                             : self.tappedEquals];
    
     self.label.text=self.valueString;
+    self.valueString=@"";
 }
 
 - (IBAction)constantButtonPressed:(UIButton *)sender
 {
+    self.numbersAreEntered=NO;
     switch(sender.tag)
     {
         case Pi:
@@ -271,9 +280,11 @@
 
 - (IBAction)equalPressed:(UIButton *)sender
 {
+    self.numbersAreEntered=NO;
     self.tappedEquals=YES;
     self.countOfEqualsToBeEntered++;
     self.countOfUnaryOperationsToBeEntered=0;
+    //self.tappedOperation=NO;
     NSString* result=[brain equalsPressed:self.countOfEqualsToBeEntered
                                          :self.valueString
                                          :self.labelForSign.text

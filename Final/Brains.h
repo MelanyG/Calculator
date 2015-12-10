@@ -17,7 +17,8 @@
                                    : (BOOL) tappedOperation
                                     : (BOOL)unaryOperationPressed;
 -(NSString*)caseChangeSign:(NSInteger)countOfEqualsToBeEntered
-                          :(NSString*)valueString;
+                          :(NSString*)valueString
+                          :(BOOL) numbersArePressed;
 
 -(void) clearTheStorage;
 -(NSString*)equalsPressed:(NSInteger)countOfEqualsToBeEntered
@@ -26,7 +27,8 @@
                          :(NSString*) dataEntered;
 
 -(NSString*)caseDellPressed:(NSString*)valueString
-                           : (BOOL) tappedOperation;
+                           : (BOOL) tappedOperation
+                           : (BOOL)equalsPressed;
 
 -(NSString*)caseUnaryOperationIsPressed: (NSString*)valueString;
 

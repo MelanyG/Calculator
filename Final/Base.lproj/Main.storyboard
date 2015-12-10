@@ -405,40 +405,6 @@
                                     <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DFo-ym-2zg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCI-dI-Rq2">
-                                <rect key="frame" x="0.0" y="0.0" width="605" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Mxa-CO-aWW"/>
-                                    <constraint firstAttribute="height" constant="100" id="e0K-j0-cYq"/>
-                                    <constraint firstAttribute="height" constant="100" id="iRa-G9-7Wp"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="61"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Mxa-CO-aWW"/>
-                                        <exclude reference="iRa-G9-7Wp"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact">
-                                    <mask key="constraints">
-                                        <exclude reference="e0K-j0-cYq"/>
-                                        <include reference="iRa-G9-7Wp"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="19"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="Mxa-CO-aWW"/>
-                                        <exclude reference="e0K-j0-cYq"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="800" height="19"/>
-                                </variation>
-                            </label>
                             <button opaque="NO" tag="1017" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ztj-1L-DRR">
                                 <rect key="frame" x="0.0" y="153" width="93" height="102"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -692,6 +658,40 @@
                                     <action selector="constantButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sNt-3d-dmR"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCI-dI-Rq2">
+                                <rect key="frame" x="0.0" y="0.0" width="605" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Mxa-CO-aWW"/>
+                                    <constraint firstAttribute="height" constant="100" id="e0K-j0-cYq"/>
+                                    <constraint firstAttribute="height" constant="100" id="iRa-G9-7Wp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="61"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Mxa-CO-aWW"/>
+                                        <exclude reference="iRa-G9-7Wp"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="e0K-j0-cYq"/>
+                                        <include reference="iRa-G9-7Wp"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="19"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Mxa-CO-aWW"/>
+                                        <exclude reference="e0K-j0-cYq"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="800" height="19"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.72402486310000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1570,7 +1570,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-927" y="-600"/>
+            <point key="canvasLocation" x="-964" y="-601.5"/>
         </scene>
     </scenes>
     <resources>
