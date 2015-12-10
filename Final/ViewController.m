@@ -21,6 +21,7 @@
 @property(nonatomic) NSInteger countOfUnaryOperationsToBeEntered;
 @property(nonatomic) BOOL numbersAreEntered;
 
+@property (nonatomic, strong) NSSet *unaryOperations;
 
 @end
 
@@ -30,12 +31,17 @@
 
 
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.valueString=@"";
     brain = [Brains createSinglton];
     [brain creationOfStorage];
+    
+   self.unaryOperations= [[NSSet alloc]initWithObjects: @"1005",@"1006",@"1007",@"1008",@"1009",@"1010",@"1011",@"1012",
+                        @"1013",@"1014",@"1015",@"1016",@"1017",@"1018",@"1020", @"1025",
+                        @"1021",@"1026",@"1027", nil];
     
 }
 
@@ -92,9 +98,7 @@
 - (IBAction)operationPressed:(UIButton *)sender
 {
     self.numbersAreEntered=NO;
-    NSSet *unaryOperations=[[NSSet alloc]initWithObjects: @"1005",@"1006",@"1007",@"1008",@"1009",@"1010",@"1011",@"1012",
-        @"1013",@"1014",@"1015",@"1016",@"1017",@"1018",@"1020", @"1025",
-        @"1021",@"1026",@"1027", nil];
+
     if(self.tappedOperation==NO)
     {
 
@@ -103,13 +107,12 @@
             {
                 UnaryOperationType unary = sender.tag;
                 NSString* tmp=[NSString stringWithFormat:@"%ld", unary];
-               if([unaryOperations containsObject:tmp])
+               if([self.unaryOperations containsObject:tmp])
                {
                    self.unaryOperationpressed=YES;
                    self.countOfUnaryOperationsToBeEntered++;
                }
-                //if(self.countOfUnaryOperationsToBeEntered==1)
-                //{
+               
                 self.valueString=[brain addingElementsToStorage: self.label.text
                                                                : self.tappedOperation
                                                                : self.unaryOperationpressed];
@@ -251,7 +254,7 @@
 
 - (IBAction)tappedDellLastNumber:(UIButton *)sender
 {
-    self.valueString = [brain caseDellPressed: self.valueString
+    self.valueString = [brain caseDellPressed: self.label.text
                                              : self.tappedOperation
                                              : self.tappedEquals];
    
@@ -284,7 +287,7 @@
     self.tappedEquals=YES;
     self.countOfEqualsToBeEntered++;
     self.countOfUnaryOperationsToBeEntered=0;
-    //self.tappedOperation=NO;
+    
     NSString* result=[brain equalsPressed:self.countOfEqualsToBeEntered
                                          :self.valueString
                                          :self.labelForSign.text

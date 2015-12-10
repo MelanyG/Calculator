@@ -47,12 +47,12 @@
         if(unaryOperationPressed)
         {
             return valueString;
-            //[self caseUnaryOperationIsPressed: valueString];
-            
-        }
+         }
+        
         finalResult=[self caseStorageIsFull:self.storage];
         return finalResult;
      }
+    
     return valueString;
 }
 
@@ -68,7 +68,7 @@
 {
         
     if([valueString isEqual:@"π"])
-    self.result = 3.14159265;
+        self.result = 3.14159265;
     else if([valueString isEqual:@"e"])
         self.result = 2.71828182;
     
@@ -110,14 +110,11 @@
         if([valueString isEqual:@""])
         {
             self.storage[2]=self.storage[0];
-            //valueString=dataEntered;
         }
         
         else
         {
-           // finalResult=@"";
-            [self.storage addObject:valueString];
-            
+           [self.storage addObject:valueString];
         }
         
         self.buferForData=self.storage[2];
@@ -141,6 +138,7 @@
                           : (BOOL) numbersArePressed;
 {
     CGFloat numberOne;
+    
     if(self.storage.count>0 && self.storage.count<3 && countOfEqualsToBeEntered>0)
         valueString = self.storage[0];
     else if(self.storage.count==1)
@@ -186,7 +184,7 @@
 }
 
 -(NSString*)caseStorageIsFull: (NSMutableArray*) storage
-                             //: (BOOL) UnaryOperationPressed
+
 {
     self.result = [self calculationsDone: self.storage];
     
@@ -210,12 +208,6 @@
                            : (BOOL) tappedOperation
                            : (BOOL)equalsPressed
 {
-    //if (!tappedOperation&&!equalsPressed)
-   //{
-    
-     
-  
-    //}
     if(equalsPressed)
         valueString=self.storage[0];
       NSString * new = [valueString substringToIndex:[valueString length] - 1];
@@ -231,8 +223,10 @@
 
     if(equalsPressed)
         self.storage[0]=valueString;
-      return valueString;
+    
+    return valueString;
 }
+
 -(NSString*) caseUnaryOperationIsPressed: (NSString*)valueString
 {
     NSInteger i=0, j=1;
