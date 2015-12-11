@@ -106,7 +106,7 @@
             if((self.tappedEquals==NO) && (self.unaryOperationpressed==NO))
             {
                 UnaryOperationType unary = sender.tag;
-                NSString* tmp=[NSString stringWithFormat:@"%ld", unary];
+                NSString* tmp=[NSString stringWithFormat:@"%d", unary];
                if([self.unaryOperations containsObject:tmp])
                {
                    self.unaryOperationpressed=YES;
